@@ -8,14 +8,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class FindCustomerByIdConfig {
 
-    public FindCustomerByIdConfig(FIndCustomerByIdAdapter fIndCustomerByIdAdapter) {
-    }
-
     @Bean
-    public FindCustomerByIdConfig  findCustomerByIdConfig(
-            FindCustomerByIdUseCase findCustomerByIdUseCase,
+    public FindCustomerByIdUseCase findCustomerByIdUseCase(
             FIndCustomerByIdAdapter fIndCustomerByIdAdapter
     ) {
-        return new FindCustomerByIdConfig (fIndCustomerByIdAdapter);
+        return new FindCustomerByIdUseCase(fIndCustomerByIdAdapter);
     }
 }

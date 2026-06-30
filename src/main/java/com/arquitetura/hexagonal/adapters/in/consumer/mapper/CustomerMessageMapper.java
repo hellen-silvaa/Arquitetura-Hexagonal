@@ -8,7 +8,11 @@ import org.mapstruct.Mapping;
 @Mapper(componentModel = "spring")
 public interface CustomerMessageMapper {
 
-    @Mapping(target = "address", ignore = true)
+    @Mapping(target = "anddress", ignore = true)
+    @Mapping(target = "validCpf", ignore = true)
     Customer toCustomer(CustomerMessage customerMessage);
+
+    @Mapping(target = "zipCode", ignore = true)
+    @Mapping(target = "isValidCpf", source = "validCpf")
     CustomerMessage toCustomerMessage(Customer customer);
 }
