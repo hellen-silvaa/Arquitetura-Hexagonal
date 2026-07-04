@@ -15,3 +15,4 @@ public interface CustomerEntityMapper {
     @Mapping(target = "validCpf", source = "isValidCpf")
     Customer toCustomer(CustomerEntity customerEntity);
 }
+
