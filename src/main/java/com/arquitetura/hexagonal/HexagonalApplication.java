@@ -12,3 +12,4 @@ public class HexagonalApplication {
 		SpringApplication.run(HexagonalApplication.class, args);
 	}
 }
+
