@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import static com.tngtech.archunit.library.Architectures.layeredArchitecture;
 
+
 @AnalyzeClasses(packages = "com.arquitetura.hexagonal")
 public class LayeredArchitectureTest {
     @ArchTest
