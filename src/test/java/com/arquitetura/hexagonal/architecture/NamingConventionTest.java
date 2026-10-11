@@ -8,6 +8,7 @@ import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.classes;
 
 @AnalyzeClasses(packages = "com.arquitetura.hexagonal")
 public class NamingConventionTest {
+    
 
     @ArchTest
     public static final ArchRule consumer_reside_only_consumer_package = classes()
